@@ -6,7 +6,7 @@ import statisticalData from './statistical-data.json';
 import FriendList from './components/FriendList';
 import friends from './friends.json';
 import transactions from './transactions.json';
-// import TransactionHistory from './components/TransactionHistory';
+import TransactionHistory from './components/TransactionHistory';
 
 function App() {
   return (

@@ -1,0 +1,36 @@
+.description {
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.profile {
+  margin-top: 50px;
+  width: 400px;
+  background-color: azure;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.label {
+  display: block;
+}
+
+.items {
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.items:not(:last-child) {
+  margin-right: 10px;
+}
