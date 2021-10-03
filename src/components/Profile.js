@@ -1,26 +1,26 @@
 import PropTypes from 'prop-types';
-import styles from '../css/Profile.module.css';
+import s from '../css/Profile.module.css';
 function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div className={styles.profile}>
-      <div className={styles.description}>
-        <img className={styles.profileImg} src={avatar} alt="Аватар пользователя" width="150" />
+    <div className={s.container}>
+      <div className={s.inner}>
+        <img className={s.img} src={avatar} alt="Аватар пользователя" width="150" />
         <p>{name}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
 
-      <ul className={styles.stats}>
-        <li className={styles.items}>
-          <span className={styles.label}>Followers</span>
+      <ul className={s.items}>
+        <li className={s.item}>
+          <span className={s.label}>Followers</span>
           <span>{stats.followers}</span>
         </li>
-        <li className={styles.items}>
-          <span className={styles.label}>Views</span>
+        <li className={s.item}>
+          <span className={s.label}>Views</span>
           <span>{stats.views}</span>
         </li>
-        <li className={styles.items}>
-          <span className={styles.label}>Likes</span>
+        <li className={s.item}>
+          <span className={s.label}>Likes</span>
           <span>{stats.likes}</span>
         </li>
       </ul>

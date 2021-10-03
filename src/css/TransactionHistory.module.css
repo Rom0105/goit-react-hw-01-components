@@ -1,4 +1,4 @@
-.transactionHistory {
+.container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.transactionHead {
+.items {
   border: 0px solid #b5b5b5;
 
   background-color: #00bcd5;
@@ -25,12 +25,12 @@
   text-transform: uppercase;
 }
 
-.transactionTitle {
+.item {
   width: 33.3%;
   padding: 15px 5px;
 }
 
-.transactionCell {
+.element {
   padding: 15px 5px;
 
   text-transform: capitalize;
@@ -40,12 +40,12 @@
   cursor: pointer;
 }
 
-.transactionCell:hover,
-.transactionCell:focus {
+.element:hover,
+.element:focus {
   background-color: #c9dcdf;
   transition: background-color 250ms linear;
 }
 
-.transactionRow:nth-child(even) {
+.wrapper:nth-child(even) {
   background-color: #ecf1f4;
 }
