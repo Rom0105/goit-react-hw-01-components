@@ -34,3 +34,8 @@
 .items:not(:last-child) {
   margin-right: 10px;
 }
+
+.profileImg {
+  margin-left: auto;
+  margin-right: auto;
+}

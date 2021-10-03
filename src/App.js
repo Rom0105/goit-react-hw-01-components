@@ -1,4 +1,3 @@
-import './App.css';
 import Profile from './components/Profile';
 import user from './user.json';
 import Statistics from './components/Statistics';
