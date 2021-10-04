@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from '../css/FriendListItem.module.css';
+import s from '../FriendListItem/FriendListItem.module.css';
 function Friends({ avatar, name, isOnline }) {
   return (
     <li className={s.item}>

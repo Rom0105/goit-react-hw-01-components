@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from '../css/Profile.module.css';
+import s from '../Profile/Profile.module.css';
 function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={s.container}>
