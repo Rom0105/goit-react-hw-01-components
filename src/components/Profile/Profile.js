@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import s from '../Profile/Profile.module.css';
+import noAvatar from '../../image/noavatar.png';
+
 function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={s.container}>
@@ -28,7 +30,9 @@ function Profile({ name, tag, location, avatar, stats }) {
   );
 }
 
-export default Profile;
+Profile.defaultProps = {
+  avatar: noAvatar,
+};
 
 Profile.propTypes = {
   name: PropTypes.string,
@@ -41,3 +45,5 @@ Profile.propTypes = {
     likes: PropTypes.number,
   }),
 };
+
+export default Profile;

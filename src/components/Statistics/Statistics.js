@@ -17,8 +17,6 @@ function Statistics({ title, stats }) {
   );
 }
 
-export default Statistics;
-
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
@@ -29,3 +27,5 @@ Statistics.propTypes = {
     }),
   ).isRequired,
 };
+
+export default Statistics;

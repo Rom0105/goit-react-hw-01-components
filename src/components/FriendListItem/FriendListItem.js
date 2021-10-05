@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import s from '../FriendListItem/FriendListItem.module.css';
+import noAvatar from '../../image/noavatar.png';
+
 function Friends({ avatar, name, isOnline }) {
   return (
     <li className={s.item}>
@@ -12,10 +14,14 @@ function Friends({ avatar, name, isOnline }) {
   );
 }
 
-export default Friends;
+Friends.defaultProps = {
+  avatar: noAvatar,
+};
 
 Friends.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool,
 };
+
+export default Friends;
